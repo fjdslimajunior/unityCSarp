@@ -10,7 +10,7 @@ public class variaveis : MonoBehaviour
     void Start()
     {
         resultadoVida = statusPlayer(lifePlayer, attackEnemy);
-        Debug.Log($"Você tomou {resultadoVida} lapada seca!");
+        Debug.Log($"Você tomou {resultadoVida} lapada seca de {attackEnemy} cm!");
     }
 
 
