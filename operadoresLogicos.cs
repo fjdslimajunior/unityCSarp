@@ -9,14 +9,35 @@ public class condicionais : MonoBehaviour
      ! (NÃO / NOT)
     */
 
-    string humor;
-    bool pizza, refrigerante;
+    //string humor;
+    //bool pizza, refrigerante;
+    int moeda = 50, precoPersonagem = 100;
     void Start()
     {
         // pizza = true;
         // refrigerante = true;
-        humor = (pizza == true) && (refrigerante == true) ? "triste" : "feliz";
-        Debug.Log(humor);
+        /* humor = (pizza == true) || (refrigerante == false) ? "feliz" : "triste";
+         Debug.Log(humor);
+         
+        
+        */
+        string resultado;
+        int idade = 18, menorIdade = 16;
+        resultado = idade > menorIdade ? "Maior" : "Menor";
+
+        if (idade <= menorIdade && moeda <= precoPersonagem)
+        {
+            print("Passa caixa!");
+        }
+        else if (idade == menorIdade && moeda == precoPersonagem)
+        {
+            print("Vai comprar mais vai ficar liso!");
+        }
+        else
+        {
+            print(resultado);
+        }
+
 
     }
 
