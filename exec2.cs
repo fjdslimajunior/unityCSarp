@@ -3,6 +3,7 @@ using UnityEngine;
 public class aplicacaoTreino : MonoBehaviour
 {
     int num1 = 110, num2 = 110, num3 = 100, media;
+    int resto;
 
 
     /*
@@ -20,7 +21,8 @@ public class aplicacaoTreino : MonoBehaviour
     void Start()
     {
         media = (num1 + num2 + num3) / 3;
-        Debug.Log(media);
+
+        // Debug.Log(media);
         // if (media < 7)
         // {
         //     print("você precisa estudar mais um pouco.");
@@ -37,7 +39,8 @@ public class aplicacaoTreino : MonoBehaviour
         // {
         //     print("Iniciamos o semestre.");
         // }
-
+        resto = media % 3;
+        Debug.Log(resto);
     }
 
 
